@@ -1,10 +1,10 @@
 import React from "react";
-import './Display.css'
+import './Dispaly.css'
 
-const Button = (props) => {
+const Dispaly= (props) => {
     return (
       <div className="display">{props.value}</div>
     );
   };
   
-  export default Button;
+  export default Display;

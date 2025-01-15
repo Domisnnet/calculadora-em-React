@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Importe de 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import Calculator from './main/Calculator';
 import reportWebVitals from './reportWebVitals';
