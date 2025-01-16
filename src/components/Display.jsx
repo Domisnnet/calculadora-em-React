@@ -1,7 +1,7 @@
 import React from "react";
-import './Dispaly.css'
+import './Display.css'
 
-const Dispaly= (props) => {
+const Display= (props) => {
     return (
       <div className="display">{props.value}</div>
     );
