@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css';
+import '../components/Button.css';
 
 const Button = (props) => {
   const classes = ['button'];
@@ -11,7 +11,7 @@ const Button = (props) => {
   return (
     <button 
       className={classes.join(' ')}
-      onClick={(e) => props.click && props.click(props.label)}
+      onClick={props.click}
     >
       {props.label}
     </button>

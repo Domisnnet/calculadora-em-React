@@ -10,6 +10,7 @@
     border-right: var(--border-button);
     border-bottom: var(--border-button);
     outline: none;
+    color: #333; /* Adicionado: Define a cor do texto padrão */
 }
 
 .button:active {
@@ -26,7 +27,7 @@
 
 .button.operation {
     background-color: #fa8231;
-    color: #fff;
+    color: #fff; /* Cor do texto para botões de operação */
 }
 
 .button.operation:active {
