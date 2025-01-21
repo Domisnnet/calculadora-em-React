@@ -24,7 +24,7 @@ export default class Calculator extends Component {
     return (
       <div className="calculator">
         <Display value={"100"} />
-        <Button Label="AC" click={() => this.clearMemory()} />
+        <Button Label="AC" click={() => this.clearMemory()} triple />
         <Button Label="/" click={() => setOperation('/')} operation />  {/*  <== Propriedade Operation Adicionada */}
         <Button Label="7" click={() => addDigit('7')} />
         <Button Label="8" click={() => addDigit('8')} /> {/*  <== Propriedade click Adicionada */}
