@@ -1,5 +1,5 @@
 import React from "react";
-import './Display.css'
+import '../components/Display.css'
 
 const Display= (props) => {
     return (
