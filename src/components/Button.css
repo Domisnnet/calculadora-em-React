@@ -11,6 +11,7 @@
     border-bottom: var(--border-button);
     outline: none;
     color: #333; /* Adicionado: Define a cor do texto padrão */
+    font-weight: 700;
 }
 
 .button:active {
