@@ -4,9 +4,37 @@ import Button from '../components/Button';
 
 import './Calculator.css';
 
+const initialState = {
+    dispalyValue: '0',
+    clearDisplay: false,
+    operation: null,
+    values: [0,0],
+    current: 0
+}
+
 export default class Calculator extends Component {
+
+    state = { ...initialState }
+
     addDigit = (n) => {
+      if (n === '.' && this.state.dispalyValue.includes('.')) {
+        return 
+      }
+
+      const clearDisplay = this.state.dispalyValue === '0'
+        || this.state.clearDisplay 
+      const currentValue = clearDisplay ? '' : this.state.dispalyValue
+      const dispalyValue = currentValue + n
+      this.setState({ dispalyValue, clearDisplay: false }) 
       
+      if (n !== '.') {
+        const i = this.state.current
+        const newValue = parseFloat(dispalyValue)
+        const values = [...this.state.values]
+        values[i] = newValue
+        this.setState({ values })
+        console.log(values)
+      }
     }
 
     setOperation = (op) => {
@@ -14,7 +42,7 @@ export default class Calculator extends Component {
     }
 
     clearMemory = () => {
-
+      this.setState({ ...initialState })
     }
 
   render() {
@@ -23,7 +51,7 @@ export default class Calculator extends Component {
 
     return (
       <div className="calculator">
-        <Display value={"100"} />
+        <Display value={this.state.dispalyValue} />
         <Button Label="AC" click={() => this.clearMemory()} triple />
         <Button Label="/" click={() => setOperation('/')} operation /> 
         <Button Label="7" click={() => addDigit('7')} />
