@@ -38,7 +38,23 @@ export default class Calculator extends Component {
     }
 
     setOperation = (op) => {
-        
+        if (this.state.current === 0) {
+          this.setState({ op, current: 1, clearDisplay: true })
+        }else {
+          const finish = op === '='
+          const currentOperation = this.state.operation
+          const values = [ ...this.state.values]
+          values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`)
+          values[1] = 0
+
+          this.setState({
+            dispalyValue: values[0], 
+            op: finish ? null : op, 
+            current: finish ? 0 : 1, 
+            clearDisplay: !finish, 
+            values
+          })
+        }
     }
 
     clearMemory = () => {
@@ -56,13 +72,13 @@ export default class Calculator extends Component {
         <Button Label="/" click={() => setOperation('/')} operation /> 
         <Button Label="7" click={() => addDigit('7')} />
         <Button Label="8" click={() => addDigit('8')} /> 
-         <Button Label="9" click={() => addDigit('9')} /> 
+        <Button Label="9" click={() => addDigit('9')} /> 
         <Button Label="*" click={() => setOperation('*')} operation />  
         <Button Label="4" click={() => addDigit('4')} /> 
-         <Button Label="5" click={() => addDigit('5')} /> 
+        <Button Label="5" click={() => addDigit('5')} /> 
         <Button Label="6" click={() => addDigit('6')} /> 
         <Button Label="-" click={() => setOperation('-')} operation />    
-         <Button Label="1" click={() => addDigit('1')} /> 
+        <Button Label="1" click={() => addDigit('1')} /> 
         <Button Label="2" click={() => addDigit('2')} /> 
         <Button Label="3" click={() => addDigit('3')} /> 
         <Button Label="+" click={() => setOperation('+')} operation /> 
