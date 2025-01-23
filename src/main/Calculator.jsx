@@ -47,22 +47,29 @@ const Calculator = () => {
         setState(prevState => ({ ...prevState, clearDisplay: false }));
 
         if (n !== '.') {
-            const newValue = parseFloat(dispalyValue);
-            setState(prevState => {
-                const newValues = [...prevState.values];
-                newValues[prevState.current] = newValue;
-                return { ...prevState, values: newValues };
-            });
-        }
+          const newValue = parseFloat(dispalyValue);
+          setState(prevState => {
+              const newValues = [...prevState.values];
+              newValues[prevState.current] = newValue;
+              return { ...prevState, values: newValues };
+          });
+      }
     }, [state.clearDisplay, state.dispalyValue, updateDisplayValue, setState]);
 
-    const setOperation = useCallback(op => {
-        if (state.current === 0) {
-            setState(prevState => ({ ...prevState, operation: op, current: 1, clearDisplay: true }));
-        } else {
-            const finish = op === '=';
-            const result = calculate(state.values[0], state.operation, state.values[1]);
-            
+     const setOperation = useCallback(op => {
+        if (state.operation === null){
+            setState(prevState => ({ ...prevState, operation: op, current: 1, clearDisplay: true, values: [parseFloat(state.dispalyValue), 0] }));
+        } else{
+             const finish = op === '=';
+             const result = calculate(state.values[0], state.operation, state.values[1]);
+
+            // Verificação isNaN e isFinite
+              if (isNaN(result) || !isFinite(result)) {
+                 setState(initialState); // Use clearMemory aqui para zerar o estado
+                 updateDisplayValue("Erro")
+                 return;
+             }
+
             updateDisplayValue(result.toString());
 
             setState(prevState => ({
@@ -73,7 +80,7 @@ const Calculator = () => {
                 values: [result, 0]
             }));
         }
-    }, [state, updateDisplayValue, setState]);
+    }, [state, updateDisplayValue, setState]); // Remova clearMemory aqui
 
     const clearMemory = useCallback(() => {
         setState({ ...initialState });
