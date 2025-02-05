@@ -5,7 +5,7 @@
 
 Este projeto foi gerado com todo o poder do Create React App (CRA), a ferramenta perfeita para você iniciar sua jornada no React. Prepare-se para criar interfaces incríveis e aplicações web de alto desempenho!
 
-## ✨ Sobre o Projeto
+## ✨ Sobre o Projeto:
 
 Este é um projeto calculadora em  React⚛️  que permite realizar operações aritméticas básicas. Utiliza useState para gerenciar o estado e useCallback para otimizar o desempenho. Inclui funcionalidades como adição de dígitos, seleção de operações, limpeza do display e tratamento de erros, exibindo "Erro" em operações inválidas.
 
