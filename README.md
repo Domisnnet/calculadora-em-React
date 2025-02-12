@@ -90,7 +90,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
            <span style="font-weight: bold; color: #1c7430;">1. 🍴 <a href="https://github.com/Domisnnet/calculadora-em-react/fork" target="_blank" style="color: #1c7430; text-decoration: underline;">Faça um fork</a>:</span> Adicione este projeto ao seu deck.
       </li>
       <li style="margin-bottom: 10px;">
-          <span style="font-weight: bold; color: #1c7430;">2. 🌿 Crie uma branch:</span> Prepare suas cartas. <a href="https://www.atlassian.com/br/git/tutorials/using-branches" target="_blank" style="color: #1c7430; text-decoration: underline;">Tutorial sobre Branches</a>
+          <span style="font-weight: bold; color: #1c7430;">2. 🌿 Crie uma branch:</span> Prepare suas atualizações. <a href="https://www.atlassian.com/br/git/tutorials/using-branches" target="_blank" style="color: #1c7430; text-decoration: underline;">Tutorial sobre Branches</a>
       </li>
       <li style="margin-bottom: 10px;">
           <span style="font-weight: bold; color: #1c7430;">3. ✍️ Prepare seus commits:</span> Guarde suas mudanças. <a href="https://www.atlassian.com/br/git/tutorials/saving-changes/git-commit" target="_blank" style="color: #1c7430; text-decoration: underline;">Tutorial sobre Commits</a>
