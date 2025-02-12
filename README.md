@@ -81,11 +81,33 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## 🤝 Contribuição:
 
-1.  Faça um fork do repositório.
-2.  Crie uma branch com a sua feature: `git checkout -b minha-nova-feature`
-3.  Faça commit das suas mudanças: `git commit -m 'Adiciona uma nova feature'`
-4.  Faça push para a sua branch: `git push origin minha-nova-feature`
-5.  Abra um Pull Request.
+<div style="background-color: #f0f0f0; padding: 20px; border-radius: 10px; border: 2px solid #222;">
+    <p style="margin-bottom: 10px; font-weight: bold; color: #0056b3; text-align: center;">
+      <span style="display:inline-block; margin-right: 5px;"> 👐 </span> Siga os passos para fortalecer este deck:
+    </p>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+      <li style="margin-bottom: 10px;">
+           <span style="font-weight: bold; color: #1c7430;">1. 🍴 <a href="https://github.com/Domisnnet/calculadora-em-react/fork" target="_blank" style="color: #1c7430; text-decoration: underline;">Faça um fork</a>:</span> Adicione este projeto ao seu deck.
+      </li>
+      <li style="margin-bottom: 10px;">
+          <span style="font-weight: bold; color: #1c7430;">2. 🌿 Crie uma branch:</span> Prepare suas cartas. <a href="https://www.atlassian.com/br/git/tutorials/using-branches" target="_blank" style="color: #1c7430; text-decoration: underline;">Tutorial sobre Branches</a>
+      </li>
+      <li style="margin-bottom: 10px;">
+          <span style="font-weight: bold; color: #1c7430;">3. ✍️ Prepare seus commits:</span> Guarde suas mudanças. <a href="https://www.atlassian.com/br/git/tutorials/saving-changes/git-commit" target="_blank" style="color: #1c7430; text-decoration: underline;">Tutorial sobre Commits</a>
+      </li>
+     <li style="margin-bottom: 10px;">
+          <span style="font-weight: bold; color: #1c7430;">4. 🚀 Envie:</span> Lance sua sugestão (`git push origin minha-contribuicao`).
+      </li>
+      <li>
+           <span style="font-weight: bold; color: #1c7430;">5. ⚔️ <a href="https://github.com/Domisnnet/calculadora-em-react/compare" target="_blank" style="color: #1c7430; text-decoration: underline;">Abra um Pull Request</a>:</span> Desafie este deck original.
+      </li>
+      <li>
+           <span style="font-weight: bold; color: #1c7430;">6. 🐛 <a href="https://github.com/Domisnnet/calculadora-em-react/issues" target="_blank" style="color: #1c7430; text-decoration: underline;">Reportar um problema/Sugestão (Issues)</a></span>
+      </li>
+    </ul>
+</div>
+
+---
 
 ## 📚 Mergulhe Mais Fundo
 
