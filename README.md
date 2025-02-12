@@ -69,7 +69,13 @@ Exemplo:
 
 Quer saber como a Calculadora foi construída? Confira o código-fonte no nosso repositório:
 
-[Repositório da Calculadora](https://github.com/Domisnnet/calculadora-em-React)    
+[Repositório da Calculadora](https://github.com/Domisnnet/calculadora-em-React) 
+
+## 📝 Licença:
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
 
 ## 🤝 Contribuição:
 
@@ -96,11 +102,6 @@ Quer se tornar um mestre no React? Explore estes recursos:
 
 Se você encontrar um bug ou tiver alguma sugestão, por favor, abra uma [Issue](https://github.com/Domisnnet/calculadora-em-React/issues) neste repositório.
 
-## 📝 Licença:
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
 
 Feito com ❤️ por:
 
