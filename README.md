@@ -71,6 +71,8 @@ Quer saber como a Calculadora foi construída? Confira o código-fonte no nosso 
 
 [Repositório da Calculadora](https://github.com/Domisnnet/calculadora-em-React) 
 
+---
+
 ## 📝 Licença:
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
